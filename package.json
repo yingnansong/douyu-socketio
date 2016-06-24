@@ -1,0 +1,27 @@
+{
+  "name": "douyu-socketio",
+  "version": "0.1.0",
+  "description": "Local Socket.IO relay server for DouyuTV comments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yingnansong/douyu-bridge-socket.io.git"
+  },
+  "keywords": [
+    "douyu",
+    "socketio"
+  ],
+  "author": "Yingnan Song <syngod12345@gmail.com> (https://yingnansong.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yingnansong/douyu-bridge-socket.io/issues"
+  },
+  "homepage": "https://github.com/yingnansong/douyu-bridge-socket.io#readme",
+  "devDependencies": {
+    "douyu": "^0.1.0",
+    "socket.io": "^1.4.8"
+  }
+}
