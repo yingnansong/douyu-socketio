@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DouyuTV SocketIO Relay Server Test</title>
+</head>
+<body>
+<h1>DouyuTV SocketIO Relay Server Test</h1>
+<ul id="chats">
+
+</ul>
+
+<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+<script>
+
+io('http://localhost:8000').on('message', function(msg){
+  	
+	if(!msg) {
+		return;
+	}
+
+	console.log(msg);
+
+	switch(msg.type) {
+		case 'chatmsg': {
+			// Chat message
+			var text = '[' + msg.nn + ' Lv.' + msg.level + '] ' + msg.txt;
+			var node = document.createElement("LI");
+			var textnode = document.createTextNode(text);
+			node.appendChild(textnode);
+			document.getElementById('chats').appendChild(node);
+			break;
+		}
+	}
+
+});
+
+</script>
+</body>
+</html>

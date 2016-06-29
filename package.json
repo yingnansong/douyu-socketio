@@ -1,6 +1,6 @@
 {
   "name": "douyu-socketio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local Socket.IO relay server for DouyuTV comments.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,10 @@
     "url": "https://github.com/yingnansong/douyu-bridge-socket.io/issues"
   },
   "homepage": "https://github.com/yingnansong/douyu-bridge-socket.io#readme",
+  "dependencies": {
+    "douyu": "^0.1.0",
+    "socket.io": "^1.4.8"
+  },
   "devDependencies": {
     "douyu": "^0.1.0",
     "socket.io": "^1.4.8"
